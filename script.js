@@ -3,11 +3,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Fetch the champions from the API
   const getChampions = async () => {
-    const result = await fetch(
-      "https://ddragon.leagueoflegends.com/cdn/13.1.1/data/en_US/champion.json"
-    );
-    const champs = await result.json();
-    champions = Object.keys(champs.data).map((x) => x.toLowerCase());
+    try {
+      const result = await fetch(
+        "https://ddragon.leagueoflegends.com/cdn/13.1.1/data/en_US/champion.json"
+      );
+      const champs = await result.json();
+      champions = Object.keys(champs.data).map((x) => x.toLowerCase());
+    } catch (error) {
+      console.error('Error fetching champions:', error);
+    }
   };
 
   // Call getChampions to load the champion data
