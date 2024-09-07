@@ -1,13 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LOL Analitics Search</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOL Analytics Search</title>
+    <style>
+        .window {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .input-line {
+            margin-bottom: 10px;
+        }
+        .buttons {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="window">
+        <h2>LOL Analytics Search</h2>
+        <div class="input-line">
+            <label for="my-champ">My champion</label>
+            <input type="text" id="my-champ" placeholder="Enter your champion">
+        </div>
+        <div class="input-line">
+            <label for="enemy-champ">Enemy champion</label>
+            <input type="text" id="enemy-champ" placeholder="Enter enemy champion">
+        </div>
+        <div class="buttons">
+            <button id="search-build-btn">Search build</button>
+            <button id="search-counters-btn">Search counters</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
