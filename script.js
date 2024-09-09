@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Function to search counters
   const searchCounters = () => {
-    const myChamp = document.getElementById("my-champ").value.toLowerCase();
+    const myChamp = document.getElementById("enemy-champ").value.toLowerCase();
 
     if (champions.includes(myChamp)) {
       window.open(
