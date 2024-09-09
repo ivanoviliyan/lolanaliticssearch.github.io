@@ -1,8 +1,8 @@
 /* Global Styles */
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #f4f7fa; /* Light background */
-  color: #333;
+  background-color: #0f0f0f; /* Light background */
+  color: #e9dfdf;
   margin: 0;
   padding: 0;
   display: flex;
@@ -16,7 +16,7 @@ body {
 }
 
 .window {
-  background-color: #ffffff; /* White card for content */
+  background-color: #212121; /* White card for content */
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
@@ -29,7 +29,7 @@ h2 {
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 20px;
-  color: #3a3a3a;
+  color: #dad0d0;
 }
 
 .input-line {
@@ -55,7 +55,7 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-  border-color: #4a90e2;
+  border-color: #cdd4db;
   box-shadow: 0 4px 12px rgba(74, 144, 226, 0.2);
   outline: none;
 }
@@ -67,7 +67,7 @@ input[type="text"]:focus {
 }
 
 button {
-  background-color: #4a90e2;
+  background-color: #2ba640;
   color: white;
   padding: 12px 20px;
   font-size: 1rem;
@@ -80,7 +80,7 @@ button {
 }
 
 button:hover {
-  background-color: #4178b1;
+  background-color: #3ea6ff;
 }
 
 button:focus {
